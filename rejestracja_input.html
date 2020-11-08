@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Rejestracja</title>
+</head>
+<body>
+    <form name="rejestracja" action="send.php" method="post">
+        <table width="600" border="1" bordercolor="white" cellspacing="7" cellpadding="7">
+                <td colspan="2" align="center">Rejestracja użytkownika</td>
+
+            </tr>
+
+            <tr>
+                <td>Imię:</td>
+                <td><input type="text" name="fname" maxlength="50" /></td>
+            </tr>
+
+            <tr>
+                <td>Naziwsko:</td>
+                <td><input type="text" name="lname" maxlength="50" /></td>
+            </tr>
+
+            <tr>
+                <td>Płeć:</td>
+                <td><select name="plec">
+                    <option value="n">-</option>
+                    <option value="m">mężczyzna</option>
+                    <option value="k">kobieta</option>
+                </select></td>
+
+            </tr>
+            <tr>
+                <td>Posiadasz obywatelstwo Polskie ?</td>
+                <td><input type="radio" name="ob" value="polak"/>Tak
+                    <input type="radio" name="ob" value="niepolak"/>Nie
+                </td>
+            </tr>
+            <tr>
+                <td>Napisz coś o sobie</td>
+                <td>
+                    <textarea name="cv" cols="45" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                <input type="submit" name="subbmit" value="Prześlij"/>
+                <input type="reset" name="reset" value="Wyczyść"</td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
